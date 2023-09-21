@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 95%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  text-align: center;
+  color: purple;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.row button{
+background-color: #4CAF50;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.row button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>A little about me </h1>
+  <p>This page will give more information about me as person and what I aspire to do in the future.</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Omeet</h2>
+        <p class="title">Student</p>
+        <p>I chose to do software engineering becuase I want to go into game 	development.</p>
+        <p>It is something that I have been interested in since I was young.</p>
+      </div>
+    </div>
+        <p><button>
+	<a href='index.html'>Homepage</a>
+	</button></p>
+  </div>
+
+</body>
+</html>
